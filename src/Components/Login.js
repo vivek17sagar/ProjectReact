@@ -15,6 +15,7 @@ const Login = ({func}) => {
 
   const[nameError,setNameError] = useState(false);
   const[passError,setPassError] = useState(false);
+  const[userError,setUserError] = useState(false);
 
 
   function handleChange(key,value){
@@ -46,10 +47,19 @@ const Login = ({func}) => {
         setPassError(true);
       }
 
+      
+      if(ans===false&&ans2===false){
+        setUserError(true);
+      }else{
+        setUserError(false);
+      }
+
       if(ans&&ans2){
         navigate("/home",{state:{userneed}})
       }
 
+    }else{
+      setUserError(true);
     }
   }
 
@@ -70,6 +80,7 @@ const Login = ({func}) => {
                 <input type='name' placeholder='Enter Your Username....' value={data.username} className='userInput' onChange={(e)=>handleChange("username",e.target.value)}/><br/>
                 {passError===true?<div className='error'>password invalid !!</div>:<div></div>}
                 <input type='password' placeholder='Enter Your Password....' value={data.password} className='userInput' onChange={(e)=>handleChange("password",e.target.value)}/><br/>
+                {userError===true?<div className='error'>User Not Found !!</div>:null}
                 <button type='submit' className='login-btn' onClick={handleClick}>Log in</button><br/>
                 <hr/>
                 <h5 onClick={()=>func(false)}>Don't have an Account?</h5>
