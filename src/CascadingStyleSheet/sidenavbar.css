@@ -1,0 +1,35 @@
+
+
+.sidenavbar-container{
+    /* border: 1px solid red;
+    border: none 2px none none; */
+    width: 400px;
+    border-right: 1px solid black;
+    text-align: left;
+    padding: 30px;
+    padding-right: 70px;
+    height: 100vh;
+}
+
+.profileImage{
+    width: 35px;
+    margin-right: 8px;
+}
+
+.userprofile{
+    display: flex;
+    align-items: center;
+}
+
+.option-feature{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    padding-left: 5px;
+}
+
+.option-feature>h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

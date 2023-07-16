@@ -1,0 +1,50 @@
+
+
+.logo-image{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.middle-container{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+.righ-container{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-pro{
+    width: 20px;
+}
+
+.lef-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.product-search{
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 0.2px solid black;
+}
+
+.middle-container>div{
+    text-align: center;
+}
